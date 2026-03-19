@@ -1,5 +1,10 @@
+import asyncio
+from telethon.sync import TelegramClient
 
-api_id = 11111111
-api_hash = '24031688c3bda62e711398b2a7c2b38avxv'
-phone = '+1111111111'
+# Ensure there is an event loop for Telethon sync helpers
+asyncio.set_event_loop(asyncio.new_event_loop())
+
+api_id =23590539
+api_hash = 'aceaebdb6d7c479461028195320a9906'
+phone = '+84344712604'
 client = TelegramClient(phone, api_id, api_hash)
